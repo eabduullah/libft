@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: eabdulla <eabdulla@student.42.fr>          +#+  +:+       +#+         #
+#    By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/31 17:58:59 by eabdulla          #+#    #+#              #
-#    Updated: 2026/11/01 13:23:57 by eabdulla         ###   ########.fr        #
+#    Updated: 2026/11/03 01:27:47 by eabdulla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ OBJS = $(SRCS:.c=.o)
 all: $(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-%.o: %.c
+%.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 clean:
 	rm -f $(OBJS)
@@ -28,3 +28,4 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+.SECONDARY:
