@@ -6,7 +6,7 @@
 /*   By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 17:58:59 by eabdulla          #+#    #+#             */
-/*   Updated: 2026/11/02 22:46:22 by eabdulla         ###   ########.fr       */
+/*   Updated: 2026/11/04 18:00:50 by eabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	ft_atoi(const char *nptr)
 {
 	int		i;
 	int		sign;
-	long	n;
+	int		n;
 
 	i = 0;
 	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == ' ')

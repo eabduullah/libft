@@ -6,7 +6,7 @@
 /*   By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 17:58:59 by eabdulla          #+#    #+#             */
-/*   Updated: 2026/11/02 22:42:38 by eabdulla         ###   ########.fr       */
+/*   Updated: 2026/11/04 18:02:23 by eabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		j = 0;
 		while ((i + j) < len && big[i + j] == little[j] && big[i + j])
 			j++;
-		if (!little[j] && i + j <= len)
+		if (!little[j])
 			return ((char *)(big + i));
 		i++;
 	}

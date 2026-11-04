@@ -6,7 +6,7 @@
 /*   By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:56:37 by eabdulla          #+#    #+#             */
-/*   Updated: 2026/11/02 22:42:27 by eabdulla         ###   ########.fr       */
+/*   Updated: 2026/11/04 17:21:32 by eabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*sub;
 
 	if (!s)
-		return (ft_strdup(""));
+		return (NULL);
 	len_s = ft_strlen(s);
 	if (start >= len_s)
 		return (ft_strdup(""));

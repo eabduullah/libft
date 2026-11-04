@@ -6,7 +6,7 @@
 #    By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/31 17:58:59 by eabdulla          #+#    #+#              #
-#    Updated: 2026/11/03 01:27:47 by eabdulla         ###   ########.fr        #
+#    Updated: 2026/11/04 18:09:23 by eabdulla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,4 +28,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-.SECONDARY:
