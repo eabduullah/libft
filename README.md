@@ -49,3 +49,7 @@ Usage: `#include "libft.h"` then `cc -Wall -Wextra -Werror main.c libft.a`.
 
 - `man 3` pages of the re-implemented functions
 - The 42 Norm and GNU Make documentation
+
+### AI usage
+
+AI was used only to review my code after I had written it myself.

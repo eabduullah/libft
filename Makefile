@@ -6,7 +6,7 @@
 #    By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/31 17:58:59 by eabdulla          #+#    #+#              #
-#    Updated: 2026/11/04 18:09:23 by eabdulla         ###   ########.fr        #
+#    Updated: 2026/11/05 13:09:29 by eabdulla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	ar rs $(NAME) $(OBJS)
 %.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 clean:
