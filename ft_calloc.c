@@ -6,7 +6,7 @@
 /*   By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 17:58:59 by eabdulla          #+#    #+#             */
-/*   Updated: 2026/11/02 22:45:48 by eabdulla         ###   ########.fr       */
+/*   Updated: 2026/11/07 16:13:27 by eabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*rp;
 
-	if (size && nmemb > (SIZE_MAX / size))
+	if (size && nmemb > (size_t) - 1 / size)
 		return (NULL);
 	if (nmemb == 0 || size == 0)
 	{

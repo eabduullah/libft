@@ -6,7 +6,7 @@
 /*   By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 17:58:59 by eabdulla          #+#    #+#             */
-/*   Updated: 2026/11/03 19:40:20 by eabdulla         ###   ########.fr       */
+/*   Updated: 2026/11/06 10:03:09 by eabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdlib.h>
 # include <stddef.h>
-# include <stdint.h>
 # include <unistd.h>
 
 typedef struct s_list

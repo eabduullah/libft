@@ -6,13 +6,13 @@
 /*   By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 17:59:12 by eabdulla          #+#    #+#             */
-/*   Updated: 2026/11/02 22:42:24 by eabdulla         ###   ########.fr       */
+/*   Updated: 2026/11/06 10:09:37 by eabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_tolower(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
 	return (c);
 }

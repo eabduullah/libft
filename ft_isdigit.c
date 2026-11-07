@@ -6,13 +6,11 @@
 /*   By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 17:58:59 by eabdulla          #+#    #+#             */
-/*   Updated: 2026/11/02 22:45:28 by eabdulla         ###   ########.fr       */
+/*   Updated: 2026/11/07 15:44:23 by eabdulla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	return (0);
+	return (c >= '0' && c <= '9');
 }
