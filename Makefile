@@ -6,7 +6,7 @@
 #    By: eabdulla <eabdulla@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/31 17:58:59 by eabdulla          #+#    #+#              #
-#    Updated: 2026/11/07 16:18:49 by eabdulla         ###   ########.fr        #
+#    Updated: 2026/11/07 16:58:34 by eabdulla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,12 +17,19 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strle
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
+
 $(NAME): $(OBJS)
 	ar rs $(NAME) $(OBJS)
+
+%.o: %.c libft.h
+	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
 	rm -f $(OBJS)
+
 fclean: clean
 	rm -f $(NAME)
+
 re: fclean all
 
 .PHONY: all clean fclean re
